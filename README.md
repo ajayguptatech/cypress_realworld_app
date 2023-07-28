@@ -149,6 +149,10 @@ Cypress on Windows
 Go to the location where cypress working folder was created, see below
 Cypress on Windows
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Realworld Application Test Cases
+
+
 Click ‘Select Folder’. The below window would come up
 Cypress on Windows
 
@@ -176,4 +180,10 @@ Cypress on Windows
 
 –>npm install cypress –save-dev
 Cypress on Windows
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Real World Application Test cases
+[RealWorld_TC.xlsx](https://github.com/ajayguptatech/cypress_realworld_app/files/12193270/RealWorld_TC.xlsx)
+
+
 
