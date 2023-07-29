@@ -8,6 +8,8 @@ Link : https://tinyurl.com/How-to-Install-Cypress
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Real World Application Test cases
+Below are few test scenarios identified for the Real world application 
+link : https://react-redux.realworld.io. 
 [RealWorld_TC.xlsx](https://github.com/ajayguptatech/cypress_realworld_app/files/12193270/RealWorld_TC.xlsx)
 
 
