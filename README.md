@@ -17,7 +17,9 @@ link : https://react-redux.realworld.io.
 CYPRESS Commands
 
 npx cypress run --> runs headless (without invoking the browser)
+
 npx cypress open --> Opens GUI of Cypress to run on selected browser 
+
 Default browser --> Electron 
 
 
