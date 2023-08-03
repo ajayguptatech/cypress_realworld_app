@@ -3,6 +3,7 @@ Cypress is a next generation front end testing tool built for the modern web. Th
 
 **How To Install Cypress**
 Link : https://tinyurl.com/How-to-Install-Cypress
+
 Version Installed : 12.17.0
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
