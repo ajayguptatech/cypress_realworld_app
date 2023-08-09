@@ -17,7 +17,10 @@ link : https://react-redux.realworld.io.
 CYPRESS Commands
 
 npx cypress run --> runs headless (without invoking the browser)
-npx cypress open --> open the GUI for executing the test cases
+
+npx cypress open --> Opens GUI of Cypress to run on selected browser 
+
+Default browser --> Electron 
 
 Test Case execution
 
@@ -44,9 +47,7 @@ describe('My First Cypress Test', function() {
   │ Duration:     5 seconds                                                                        │
   │ Spec Ran:     Test1.js 
 
-npx cypress open --> Opens GUI of Cypress to run on selected browser 
 
-Default browser --> Electron 
 
 
 
