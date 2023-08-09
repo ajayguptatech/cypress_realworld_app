@@ -17,6 +17,32 @@ link : https://react-redux.realworld.io.
 CYPRESS Commands
 
 npx cypress run --> runs headless (without invoking the browser)
+npx cypress open --> open the GUI for executing the test cases
+
+Test Case execution
+
+Scenario 1 : Launch the browser
+
+// type definitions for Cypress object "cy"
+/// <reference types="cypress" />
+
+describe('My First Cypress Test', function() {
+    it('Opens the Real Worrl application', function() {
+    //Visit the Demo QA Website
+    cy.visit(" https://react-redux.realworld.io");
+})
+})
+
+ ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     Test1.js 
 
 npx cypress open --> Opens GUI of Cypress to run on selected browser 
 
