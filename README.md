@@ -24,17 +24,29 @@ Default browser --> Electron
 
 Test Case execution
 
-Scenario 1 : Launch the browser
-
 // type definitions for Cypress object "cy"
 /// <reference types="cypress" />
 
 describe('My First Cypress Test', function() {
-    it('Opens the Real Worrl application', function() {
+    before(() =>{
+        cy.visit(" https://react-redux.realworld.io")
+    })
+    it('Welcome page Real World Application and Click on Sign In', function() {
     //Visit the Demo QA Website
-    cy.visit(" https://react-redux.realworld.io");
+
+    cy.get(':nth-child(2) > .nav-link').click(); 
+    }) 
+
+
+//describe('Login using credentials' , function(){
+    it('login using username and password' , function(){
+        cy.get(':nth-child(1) > .form-control').type('ajaygupta.tech@gmail.com')  
+        cy.get(':nth-child(2) > .form-control').type('Solapur@123')    
+        cy.get('.btn').click();
+   
+    })
 })
-})
+
 
  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ Tests:        1                                                                                │
