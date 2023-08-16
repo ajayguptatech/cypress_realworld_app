@@ -26,7 +26,7 @@ Default browser --> Electron
 
 Test Case execution
 
-/ type definitions for Cypress object "cy"
+// type definitions for Cypress object "cy"
 /// <reference types="cypress" />
 
 
@@ -37,6 +37,9 @@ describe('Login to Real World Application', () => {
             this.data=data
         })
     })
+
+
+    //Login Using Credentials
     it('Validate Page Title', function() {
       //cy.visit('https://react-redux.realworld.io/#/?_k=a3ydux')
         cy.visit('https://react-redux.realworld.io')
@@ -74,12 +77,14 @@ describe('Login to Real World Application', () => {
         cy.get('.btn').dblclick()
         })*/
 })
-     
+
+
+
      Spec                                              Tests  Passing  Failing  Pending  Skipped
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ √  Test1.js                                 00:21        3        3        -        -        - │
+  │ √  Test1.js                                 00:21        4       4        -        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    √  All specs passed!                        00:21        3        3        -        -        -
+    √  All specs passed!                        00:21        4        4        -        -        -
 
 
 
