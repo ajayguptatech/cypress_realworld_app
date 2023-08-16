@@ -1,10 +1,12 @@
-**Cypress-Automation**
+![image](https://github.com/ajayguptatech/cypress_realworld_app/assets/140374002/a5c08cec-5466-42c8-8371-4f2e0598fad5)**Cypress-Automation**
 Cypress is a next generation front end testing tool built for the modern web. This is a sample project which you can use to start your E2E testing with Cypress.
 
 **How To Install Cypress**
 Link : https://tinyurl.com/How-to-Install-Cypress
 
 Version Installed : 12.17.0
+
+**Total Test cases to be automated 8 till date automated 4 TC also added parameeters and passed data using JSON file.**
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Real World Application Test cases
@@ -72,12 +74,14 @@ describe('Login to Real World Application', () => {
         cy.get('.btn').dblclick()
         })*/
 })
+
      
      Spec                                              Tests  Passing  Failing  Pending  Skipped
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ √  Test1.js                                 00:21        3        3        -        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
     √  All specs passed!                        00:21        3        3        -        -        -
+
 
 
 
