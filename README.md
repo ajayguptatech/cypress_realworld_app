@@ -26,7 +26,7 @@ Default browser --> Electron
 
 Test Case execution
 
-// type definitions for Cypress object "cy"
+/ type definitions for Cypress object "cy"
 /// <reference types="cypress" />
 
 
@@ -74,7 +74,6 @@ describe('Login to Real World Application', () => {
         cy.get('.btn').dblclick()
         })*/
 })
-
      
      Spec                                              Tests  Passing  Failing  Pending  Skipped
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
