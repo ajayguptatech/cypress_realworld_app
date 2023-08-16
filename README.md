@@ -79,14 +79,14 @@ describe('Login to Real World Application', () => {
 })
 
 
+  (Run Finished)
 
-     Spec                                              Tests  Passing  Failing  Pending  Skipped
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ √  Test1.js                                 00:21        4       4        -        -        - │
+  │ √  Real_World_Script.js                     00:16        1        1        -        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    √  All specs passed!                        00:21        4        4        -        -        -
-
-
+    √  All specs passed!                        00:16        1        1        -        -        -  
 
 
 
