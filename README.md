@@ -59,7 +59,7 @@ describe('Login to Real World Application', () => {
   
 
      //Edit Article
-     cy.get('.btn-outline-secondary').click()
+     cy.contains('Edit Article').click()
  
     //Verify the Pubblished Articles details
     cy.get(':nth-child(1) > .form-control').should('have.value',this.data.articletitle)
@@ -71,32 +71,17 @@ describe('Login to Real World Application', () => {
     //Mark an Article as Favourite
     cy.get(':nth-child(4) > .nav-link').click()
     cy.get(':nth-child(1) > .article-meta > .pull-xs-right > .btn > .ion-heart').click()
+
     cy.get('.articles-toggle > .nav > :nth-child(2) > .nav-link').click().then(function()
     {
-        console.log('marked as favourite')
+        cy.log('marked as favourite')
     })
-   
-    //Delete the Article
-    
-    cy.get('h1').click().then(function(){
-    console.log('abc')
-    })
- //   cy.get('h1').click()
-  //  cy.get('.btn-outline-danger').click()
-   
-/*
-    //Post a comment the Article
-    cy.get('h1').click()
-    cy.get('.form-control').type(this.data.articletitle)
-    cy.get('.card-footer > .btn').click()
-    cy.get('.card-text').should('have.value',this.data.articletitle)
-   
-
-    //Delete the comment
-    cy.get('.mod-options > .ion-trash-a').click()
 
     //Delete the Article
-    cy.get('.btn-outline-danger').click()*/
+    cy.once('uncaught:exception', () => false);
+    cy.get('h1').click();
+    cy.contains('Delete Article').click()
+
 })
 
 
