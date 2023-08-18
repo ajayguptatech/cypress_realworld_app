@@ -38,12 +38,10 @@ describe('Login to Real World Application', () => {
         })
     })
 
-
     //Login Using Credentials
     it('Validate Page Title', function() {
-      //cy.visit('https://react-redux.realworld.io/#/?_k=a3ydux')
         cy.visit('https://react-redux.realworld.io')
-        cy.url().should('include','realworld') 
+        cy.url().should('include','realworld') //Assertion
         cy.get(':nth-child(2) > .nav-link').click();
         cy.get(':nth-child(1) > .form-control').type(this.data.username);
         cy.get(':nth-child(2) > .form-control').type(this.data.password);
@@ -59,25 +57,50 @@ describe('Login to Real World Application', () => {
         cy.get(':nth-child(4) > .form-control').type(this.data.tags)
         cy.get('.btn').click()
   
-    
-    //Edit Article
-    cy.contains('Edit Article').click()
-        cy.get('.btn').click()
-    })
 
- /*
-    it('Publish the new Article', ()=>{
-       // cy.visit('https://react-redux.realworld.io/#/editor?_k=zeu258')
-        cy.get(':nth-child(1) > .form-control').type('Cypress')
-        cy.get(':nth-child(2) > .form-control').type('about cypress')
-        cy.get(':nth-child(3) > .form-control').type('Cypress is a web and api automation tool')
-        cy.get(':nth-child(4) > .form-control').type('Cypress is a web')
-    //    cy.get('.btn').dblclick()
-        cy.wait(1000)
-        cy.get('.btn').dblclick()
-        })*/
+     //Edit Article
+     cy.get('.btn-outline-secondary').click()
+ 
+    //Verify the Pubblished Articles details
+    cy.get(':nth-child(1) > .form-control').should('have.value',this.data.articletitle)
+    cy.get(':nth-child(2) > .form-control').should('have.value',this.data.articleabout)
+    cy.get(':nth-child(3) > .form-control').should('have.value',this.data.writearticle)
+    //cy.get(':nth-child(4) > .form-control').should('have.value',this.data.tags)
+    
+
+    //Mark an Article as Favourite
+    cy.get(':nth-child(4) > .nav-link').click()
+    cy.get(':nth-child(1) > .article-meta > .pull-xs-right > .btn > .ion-heart').click()
+    cy.get('.articles-toggle > .nav > :nth-child(2) > .nav-link').click().then(function()
+    {
+        console.log('marked as favourite')
+    })
+   
+    //Delete the Article
+    
+    cy.get('h1').click().then(function(){
+    console.log('abc')
+    })
+ //   cy.get('h1').click()
+  //  cy.get('.btn-outline-danger').click()
+   
+/*
+    //Post a comment the Article
+    cy.get('h1').click()
+    cy.get('.form-control').type(this.data.articletitle)
+    cy.get('.card-footer > .btn').click()
+    cy.get('.card-text').should('have.value',this.data.articletitle)
+   
+
+    //Delete the comment
+    cy.get('.mod-options > .ion-trash-a').click()
+
+    //Delete the Article
+    cy.get('.btn-outline-danger').click()*/
 })
 
+
+    })
 
   (Run Finished)
 
