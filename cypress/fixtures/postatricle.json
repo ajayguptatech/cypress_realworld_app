@@ -1,0 +1,12 @@
+{
+    "articletitle":"My First Blog",
+    "articleabout": "Trip to South India",
+    "writearticle": "Visited several places" ,
+    "tags": "south india" ,
+    "articletitle_loc": "h1",
+    "errorarticletitle_loc": ".error-messages > li",
+    "errormsg": "title can't be blank",
+    "noarticles":"No articles are here... yet.",
+    "noarticles_loc":".article-preview",
+    "updatewritearticle":"Retrun to home place"
+  }
