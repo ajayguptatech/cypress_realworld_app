@@ -1,0 +1,65 @@
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        12.17.0                                                                        │
+  │ Browser:        Electron 106 (headless)                                                        │
+  │ Node Version:   v20.2.0 (C:\Program Files\nodejs\node.exe)                                     │
+  │ Specs:          1 found (Generic_React_Redux.js)                                               │
+  │ Searched:       C:\Users\ajay_gupta\CypressAutomation\cypress\integration\examples\Generic_Rea │
+  │                 ct_Redux.js                                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  Generic_React_Redux.js                                                          (1 of 1)
+
+
+  Login to Real World Application
+    √ Validate Page Title (6366ms)
+    √ Post an New Article (16462ms)
+    √ Blank values are not allowed (5545ms)
+    √ Mark an Article as favourite (43389ms)
+    √ Edit & Verify the Article Details (28253ms)
+
+
+  5 passing (2m)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        5                                                                                │
+  │ Passing:      5                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     1 minute, 45 seconds                                                             │
+  │ Spec Ran:     Generic_React_Redux.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started compressing: Compressing to 32 CRF
+    Compression progress:  43%
+    Compression progress:  98%
+  -  Finished compressing: 26 seconds
+
+  -  Video output: C:\Users\ajay_gupta\CypressAutomation\cypress\videos\Generic_React_Redux.js.mp4
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  Generic_React_Redux.js                   01:45        5        5        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        01:45        5        5        -        -        -  
