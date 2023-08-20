@@ -60,11 +60,15 @@ describe('Login to Real World Application', () => {
         cy.get(this.locators.conduit).should('have.text', this.locators.homepage)
 
         cy.postanarticle(this.padata.articletitle, this.padata.articleabout, this.padata.writearticle, this.padata.tags, "true")
+        cy.wait(sync)
         cy.favouritearticle()
+        cy.wait(sync)
         cy.get(this.favdata.article_loc).should('have.text', this.favdata.articletitle)
         cy.wait(sync)
         cy.get(this.favdata.article_loc).click()
+        cy.wait(sync)
         cy.deletearticle()
+        cy.wait(sync)
         cy.log("delete fav artcile")
         cy.get(this.padata.noarticles_loc).should('have.text', this.padata.noarticles)
     });
@@ -78,6 +82,7 @@ describe('Login to Real World Application', () => {
 
         cy.updatearticle(this.padata.updatewritearticle)
         cy.get('p').should('have.text', this.padata.updatewritearticle)
+
 
         cy.deletearticle()
         cy.get(this.padata.noarticles_loc).should('have.text', this.padata.noarticles)
