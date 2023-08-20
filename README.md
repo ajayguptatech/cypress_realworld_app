@@ -1,4 +1,4 @@
-![image](https://github.com/ajayguptatech/cypress_realworld_app/assets/140374002/a5c08cec-5466-42c8-8371-4f2e0598fad5)**Cypress-Automation**
+**Cypress-Automation**
 Cypress is a next generation front end testing tool built for the modern web. This is a sample project which you can use to start your E2E testing with Cypress.
 
 **How To Install Cypress**
